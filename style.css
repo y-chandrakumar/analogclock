@@ -1,0 +1,109 @@
+     
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.visual{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(189, 179, 179, 0.648);
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+.frame{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 100%;
+    background-color:black;
+    position: absolute;
+    overflow: hidden;
+}
+
+.dot{
+    width: 1vw;
+    height:1vw;
+    border-radius: 50px;
+    background-color:white;
+    position: absolute;
+    left:19.25vw;
+    top:19.5vw;
+    
+}
+
+.vl{
+    width: 0.2vw;
+    height: 1vw;
+    background-color:white;
+    position: absolute;
+    left:19.9vw;
+    top:19.5vw;
+
+}
+
+.com{
+    position: absolute;
+    border-radius: 100% 100% 0 0;
+    transform-origin:bottom center;
+}
+.sechand{
+    height: 15vw;
+    width:0.1vw;
+    background-color:white;
+    top:5vw;
+    left:19.5vw;
+    transition: transform 0.001s ease;
+}
+.minhand{
+    height: 12vw;
+    width:0.25vw;
+    background-color: white;
+    top:7.8vw;
+    left:19.5vw;    
+    transition: transform 0.001s ease;
+}
+.hourhand{
+    height: 10vw;
+    width:0.5vw;
+    background-color:white;
+    top:10vw;
+    left:19.5vw;
+    transition: transform 0.001s ease;
+}
+.num{
+    font-size: 5vw;
+    position: absolute;
+    color:white;
+}
+.twelve{
+    left:17.5vw;
+   
+}
+.three{
+    left: 37vw;
+    top:17vw;  
+}
+.six{
+   
+    left:18.7vw;
+    top:33.8vw
+}
+.nine{
+    top:17vw; 
+    left:1vw;
+
+}
+@media (max-width: 500px) {
+    body {
+      /* Scale the web application by 1.25 times from the center */
+      transform: scale(1.5);
+      transform-origin: center center;
+      overflow:hidden;
+    }
+  }
+
