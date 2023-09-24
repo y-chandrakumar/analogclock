@@ -53,7 +53,7 @@ function ani(){
 }
 
 setInterval(ani,1000);
-// setInterval(aud,0.1);
+setInterval(aud,0.1);
 
 
 
