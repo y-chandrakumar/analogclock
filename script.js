@@ -35,11 +35,7 @@ for(let i=0;i<12;i++){
 
 
  
-let music= new Audio("files/clock-ticking-onesecond.mp3");
 
-let aud=()=>{
-    music.play();
-}
 function ani(){
     let abc=new Date();
     list=document.getElementsByClassName("vl");
@@ -53,7 +49,7 @@ function ani(){
 }
 
 setInterval(ani,1000);
-setInterval(aud,0.1);
+
 
 
 
