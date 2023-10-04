@@ -63,11 +63,15 @@ const darkmodetoggle=document.getElementById("dark-mode-toggle");
 // document.getElementById("dark-mode-toggle");
 
 const enabledarkmode = ()=>{
+     var imgElement=document.getElementById("toggle");
+     imgElement.setAttribute("src", "files/toggle-on-solid.svg");
     document.body.classList.add("dark-mode");
     localStorage.setItem("darkmode","enabled");
 
 };
 const disabledarkmode =()=>{
+     var imgElement=document.getElementById("toggle");
+    imgElement.setAttribute("src", "files/toggle-off-solid.svg");
     document.body.classList.remove("dark-mode");
     localStorage.setItem("darkmode",null);
 
@@ -78,13 +82,7 @@ if(darkmode==="enabled"){
 }
 darkmodetoggle.addEventListener("click", ()=>{
     darkmode=localStorage.getItem("darkmode");
-     var imgElement=document.getElementById("toggle");
-    if(imgElement.getAttribute("src")==="files/toggle-on-solid.svg"){
-     imgElement.setAttribute("src", "files/toggle-off-solid.svg");
-    }
-    else{ 
-        imgElement.setAttribute("src", "files/toggle-on-solid.svg");
-    }
+     
     if(darkmode!=="enabled"){
         enabledarkmode();
     }
