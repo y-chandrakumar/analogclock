@@ -78,7 +78,13 @@ if(darkmode==="enabled"){
 }
 darkmodetoggle.addEventListener("click", ()=>{
     darkmode=localStorage.getItem("darkmode");
-    console.log(darkmode)
+     var imgElement=document.getElementById("toggle");
+    if(imgElement.getAttribute("src")==="files/toggle-on-solid.svg"){
+     imgElement.setAttribute("src", "files/toggle-off-solid.svg");
+    }
+    else{ 
+        imgElement.setAttribute("src", "files/toggle-on-solid.svg");
+    }
     if(darkmode!=="enabled"){
         enabledarkmode();
     }
